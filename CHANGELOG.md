@@ -1,3 +1,8 @@
+
+## 0.14.2-dev
+
+* Add body data in `GET`
+  * Make `Object?`
 ## 0.14.1-dev
 
 * Add body data in `GET`

@@ -42,7 +42,7 @@ abstract class Client {
   Future<Response> get(
     Uri url, {
     Map<String, String>? headers,
-    Map<String, String>? body,
+    Object? body,
   });
 
   /// Sends an HTTP POST request with the given headers and body to the given

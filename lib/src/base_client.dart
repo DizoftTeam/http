@@ -26,7 +26,7 @@ abstract class BaseClient implements Client {
   Future<Response> get(
     Uri url, {
     Map<String, String>? headers,
-    Map<String, String>? body,
+    Object? body,
     Encoding? encoding,
   }) =>
       _sendUnstreamed('GET', url, headers, body, encoding);
