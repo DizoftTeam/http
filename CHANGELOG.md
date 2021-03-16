@@ -1,3 +1,6 @@
+## 0.14.1-dev
+
+* Add body data in `GET`
 ## 0.13.1-dev
 
 ## 0.13.0
@@ -45,13 +48,13 @@
 * The regular `Client` factory constructor is now usable anywhere that `dart:io`
   or `dart:html` are available, and will give you an `IoClient` or
   `BrowserClient` respectively.
-* The `package:http/http.dart` import is now safe to use on the web (or
+* The `package:dz_http/http.dart` import is now safe to use on the web (or
   anywhere that either `dart:io` or `dart:html` are available).
 
 ### Breaking Changes
 
 * In order to use or reference the `IoClient` directly, you will need to import
-  the new `package:http/io_client.dart` import. This is typically only necessary
+  the new `package:dz_http/io_client.dart` import. This is typically only necessary
   if you are passing a custom `HttpClient` instance to the constructor, in which
   case you are already giving up support for web.
 
@@ -161,7 +164,7 @@
 ## 0.11.0
 
 * The package no longer depends on `dart:io`. The `BrowserClient` class in
-  `package:http/browser_client.dart` can now be used to make requests on the
+  `package:dz_http/browser_client.dart` can now be used to make requests on the
   browser.
 
 * Change `MultipartFile.contentType` from `dart:io`'s `ContentType` type to

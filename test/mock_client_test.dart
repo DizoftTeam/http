@@ -4,8 +4,8 @@
 
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-import 'package:http/testing.dart';
+import 'package:dz_http/http.dart' as http;
+import 'package:dz_http/testing.dart';
 import 'package:test/test.dart';
 
 import 'utils.dart';

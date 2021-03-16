@@ -5,8 +5,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:http/http.dart';
-import 'package:http/src/utils.dart';
+import 'package:dz_http/http.dart';
+import 'package:dz_http/src/utils.dart';
 import 'package:pedantic/pedantic.dart';
 import 'package:test/test.dart';
 

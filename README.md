@@ -13,7 +13,7 @@ The easiest way to use this library is via the top-level functions. They allow
 you to make individual HTTP requests with minimal hassle:
 
 ```dart
-import 'package:http/http.dart' as http;
+import 'package:dz_http/http.dart' as http;
 
 var url = Uri.parse('https://example.com/whatsit/create');
 var response = await http.post(url, body: {'name': 'doodle', 'color': 'blue'});

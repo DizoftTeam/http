@@ -42,8 +42,12 @@ Future<Response> head(Uri url, {Map<String, String>? headers}) =>
 /// the same server, you should use a single [Client] for all of those requests.
 ///
 /// For more fine-grained control over the request, use [Request] instead.
-Future<Response> get(Uri url, {Map<String, String>? headers}) =>
-    _withClient((client) => client.get(url, headers: headers));
+Future<Response> get(
+  Uri url, {
+  Map<String, String>? headers,
+  Map<String, String>? body,
+}) =>
+    _withClient((client) => client.get(url, headers: headers, body: body));
 
 /// Sends an HTTP POST request with the given headers and body to the given URL.
 ///
